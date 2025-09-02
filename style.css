@@ -1,0 +1,111 @@
+body {
+  background-color: #f4f4f9;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  font-size: 8vmin;
+  color: #ffffff;
+  background-color: #6c63ff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+.box:hover {
+  background-color: #574bdb;
+}
+
+#reset-btn,
+#new-btn,
+#theme-btn,
+#apply-symbols {
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  background-color: #219ebc;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reset-btn:hover,
+#new-btn:hover,
+#theme-btn:hover,
+#apply-symbols:hover {
+  background-color: #023047;
+}
+
+/* Highlight Winner */
+.winner {
+  background-color: #ffb703 !important;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #ffb703; }
+  to { box-shadow: 0 0 30px #ffb703; }
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+.dark .game {
+  background: #1e1e2f;
+}
+
+.dark .box {
+  background-color: #333652;
+  color: #eeeeee;
+}
+
+.dark .box:hover {
+  background-color: #4a4e69;
+}
+
+.dark #reset-btn,
+.dark #new-btn,
+.dark #theme-btn,
+.dark #apply-symbols {
+  background-color: #6c63ff;
+}
+
+.dark #reset-btn:hover,
+.dark #new-btn:hover,
+.dark #theme-btn:hover,
+.dark #apply-symbols:hover {
+  background-color: #574bdb;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Message & New Game -->
+  <div class="msg-container hide">
+    <h1 id="msg">Winner</h1>
+    <button id="new-btn">New Game</button>
+  </div>
+
+  <main>
+    <h1>Tic Tac Toe</h1>
+
+    <!-- Player Turn Indicator -->
+    <h2 id="turn-indicator">Player O’s Turn</h2>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <p>Player O: <span id="score-o">0</span></p>
+      <p>Player X: <span id="score-x">0</span></p>
+    </div>
+
+    <!-- Timer -->
+    <h3 id="timer">Time Left: 10s</h3>
+
+    <div class="container">
+      <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+      </div>
+    </div>
+
+    <button id="reset-btn">Reset Game</button>
+    <button id="theme-btn">Toggle Theme</button>
+
+    <!-- Change Player Symbols -->
+    <div class="symbols">
+      <label>Player O Symbol: <input type="text" id="symbol-o" maxlength="2" value="O"></label>
+      <label>Player X Symbol: <input type="text" id="symbol-x" maxlength="2" value="X"></label>
+      <button id="apply-symbols">Apply Symbols</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
